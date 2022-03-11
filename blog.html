@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Creating Blog Page</title>
+    <link rel="stylesheet" href="blog-form.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-lg">
+          <a class="navbar-brand me-5" href="index.html">
+            <img src="dumbways.png" style="width: 50px;" alt="logo" />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="blog.html" class="nav-link list-active">My Project</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex contact-me">
+            <a href="contact-form.html" style="font-size: 15px;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            text-decoration: none;
+            background-color:  #000000;"> Contact Me </a>
+          </div>
+        </div>
+      </nav>
+    <!-- Form -->
+    <div class="blog-form">
+    <form class="form-container">
+        <h1>Add My Project</h1>
+        <div>
+          <label for="input-title" class="form-label">Project Name</label>
+          <input id="input-title" name="title" class="form-control" />
+        </div>
+        <div>
+            <div class="start-date">
+                <div>
+                  <label for="input-blog-start date">Start Date</label>
+                  <input type="date" id="input-blog-start date" />
+                </div>
+                <div class="end-date">
+                  <label for="input-blog-end date">End Date</label>
+                  <input type="date" id="input-blog-end date" />
+                </div>
+              </div>
+                <div>
+          <label for="input-content" class="form-label">Description</label>
+          <textarea id="input-content" name="content" class="form-control"></textarea>
+        </div>
+        <label for="checkbox-tech">Technologies</label>
+            <label class="container">Node Js
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container">React Js
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container">Next Js
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container">TypeScript
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div>
+
+            <label>Upload Image</label>
+            <div class="input-blog-image-group">
+              <label for="input-blog-image">
+                <p>Attach File</p>
+                <img src="link.jpg" alt="file" />
+              </label>
+              <input type="file" id="input-blog-image" hidden />
+            </div>
+          </div>
+          <div class="button-group">
+            <button style="
+          padding: 8px 30px;
+          font-size: 17px;
+          background: #0e0d0d;
+          border-radius: 20px;
+          margin-left: 240px;
+          border: none;
+          color: #fff;
+          cursor: pointer;
+          ">Submit
+            </button>
+
+          </div>
+      </form>
+    </div>
+    </body>
+    </html>
